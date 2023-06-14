@@ -59,6 +59,7 @@ img {
   padding-right: 16px;
   padding-left: 16px;
 }
+
 .section-title {
   margin-bottom: 72px;
   text-align: center;
@@ -260,10 +261,6 @@ img {
   max-width: 396px;
 }
 
-.advant-item:not(:last-child) {
-  margin-bottom: 72px;
-}
-
 .advant-undertitle {
   margin-bottom: 8px;
 
@@ -292,6 +289,7 @@ Section Team*/
 
 .what-doing-section {
   padding-bottom: 120px;
+  display: none;
 }
 .what-doing-list {
   display: flex;
@@ -317,22 +315,25 @@ Section Team*/
 }
 
 .team-section {
-  padding: 120px 0;
+  padding: 96px 0;
   background-color: var(--middle-background);
 }
 
 .team-card {
-  width: calc((100% - 24px * 3) / 4);
+  max-width: 264px;
+  margin-left: auto;
+  margin-right: auto;
 
   background: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list {
+
+/* .team-list {
   display: flex;
   gap: 24px;
-}
+} */
 
 .team-member {
   padding: 32px 16px;
@@ -377,18 +378,19 @@ Section Team*/
 /* Section Customers */
 
 .customers-section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 72px 16px;
 }
 
 .customers-item {
-  width: 168px;
+  width: 190px;
   height: 88px;
 }
 
@@ -424,23 +426,22 @@ Section Team*/
 }
 
 .footer {
-  padding: 100px 0;
+  padding: 96px 15px;
   background-color: var(--dark-background);
+}
+
+.footer-container {
+  padding: 0;
+
+  /* display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center; */
 }
 
 .logo-footer {
   margin-bottom: 16px;
   display: inline-block;
-}
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.logo-container {
-  margin-right: 40px;
 }
 
 /* ? SM Icons */
@@ -489,14 +490,17 @@ Section Team*/
 /* Futter FORM */
 
 .subscribe-form {
-  display: flex;
-  gap: 24px;
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  gap: 16px; */
 }
 
 .subscribe-input {
   padding: 8px 16px;
 
-  width: 264px;
+  width: 100%;
+  max-width: 398px;
   height: 40px;
   background-color: transparent;
   border: 1px solid var(--white-color);
