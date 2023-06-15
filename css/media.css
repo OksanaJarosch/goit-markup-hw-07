@@ -53,8 +53,82 @@
 /*! tablet */
 
 @media screen and (min-width: 768px) {
+  /* Hero */
+
+  .overlay {
+    max-width: 768px;
+
+    /* background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  }
+
+  .hero-title {
+    margin-bottom: 36px;
+    max-width: 496px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  /* Advantages */
+
+  .advant-item {
+    margin: 0;
+    max-width: 356px;
+  }
+
+  /* Team */
+
+  .team-card {
+    margin: 0;
+  }
 }
 
+/*! Tablet only!!! */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  /* Advantages */
+  .advant-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    max-width: 736px;
+    margin: 0 auto;
+    gap: 72px 24px;
+  }
+
+  .advant-undertitle {
+    text-align: start;
+  }
+
+  /* Team */
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 736px;
+    margin: 0 auto;
+    gap: 64px 24px;
+  }
+
+  /* Customers */
+  .customers-list {
+    width: 100%;
+    max-width: 736px;
+    gap: 72px 24px;
+    margin: 0 auto;
+  }
+}
 /*! desktop*/
 
 @media screen and (min-width: 1440px) {
@@ -74,18 +148,17 @@
     height: 600px;
 
     /* background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg); */
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  */
   }
-
   .hero-title {
     margin-bottom: 48px;
-    max-width: 496px;
-
-    font-size: 56px;
-    line-height: 1.07;
   }
 
   /* Advantages */
@@ -100,7 +173,6 @@
     gap: 24px;
   }
   .advant-item {
-    margin: 0;
     width: 264px;
   }
 
@@ -112,6 +184,10 @@
 
   .advant-item .thumb {
     display: flex;
+  }
+
+  .advant-text {
+    font-weight: 400;
   }
 
   /* What are we doing */
