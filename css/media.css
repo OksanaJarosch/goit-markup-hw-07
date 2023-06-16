@@ -88,11 +88,29 @@
   .team-card {
     margin: 0;
   }
+
+  /* Footer */
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
 }
 
 /*! Tablet only!!! */
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+  .tablet-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 552px;
+    margin: 0 auto;
+  }
+
   /* Advantages */
   .advant-list {
     display: flex;
@@ -110,23 +128,25 @@
 
   /* Team */
   .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    max-width: 736px;
-    margin: 0 auto;
     gap: 64px 24px;
   }
 
   /* Customers */
   .customers-list {
-    width: 100%;
-    max-width: 736px;
     gap: 72px 24px;
-    margin: 0 auto;
+  }
+
+  .customers-item {
+    width: 168px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 96px 0;
+  }
+
+  .footer-container {
+    gap: 72px 24px;
   }
 }
 /*! desktop*/
@@ -244,14 +264,5 @@
 
   .logo-container {
     margin-right: 40px;
-  }
-
-  .subscribe-form {
-    display: flex;
-    gap: 24px;
-  }
-
-  .subscribe-input {
-    width: 264px;
   }
 }
