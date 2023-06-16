@@ -710,8 +710,9 @@ Section Team*/
   transform: translate(-50%, -50%) scaleX(1);
   transition: transform var(--transition);
 
-  padding: 72px 24px 24px 24px;
-  width: 408px;
+  padding: 72px 16px 24px 16px;
+  width: 100%;
+  max-width: 392px;
   min-height: 584px;
 
   background-color: #fcfcfc;

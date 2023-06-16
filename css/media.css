@@ -13,6 +13,10 @@
     padding-bottom: 22px;
   }
 
+  /* .modal {
+    max-width: 392px;
+  } */
+
   .advant-item:not(:last-child) {
     margin-bottom: 72px;
   }
@@ -73,6 +77,11 @@
 
   .hamburger-btn {
     display: none;
+  }
+
+  .modal {
+    max-width: 408px;
+    padding: 72px 24px 24px 24px;
   }
 
   /* Hero */
