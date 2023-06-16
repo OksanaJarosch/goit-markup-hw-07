@@ -98,8 +98,7 @@ img {
 }
 
 .menu-list {
-  display: flex;
-  gap: 40px;
+  display: none;
 }
 
 .header-container {
@@ -181,6 +180,16 @@ img {
 
 .contacts {
   margin-left: auto;
+}
+
+.hamburger-btn {
+  margin: 0;
+  background-color: var(--white-color);
+  border: none;
+}
+
+.hamburger-icon {
+  stroke: var(--dark-background);
 }
 
 /* Hero */

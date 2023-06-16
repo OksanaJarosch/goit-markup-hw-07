@@ -1,6 +1,18 @@
 /*! only phone */
 
 @media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 428px;
+    padding-top: 24px;
+    padding-bottom: 22px;
+  }
+
   .advant-item:not(:last-child) {
     margin-bottom: 72px;
   }
@@ -53,8 +65,17 @@
 /*! tablet */
 
 @media screen and (min-width: 768px) {
-  /* Hero */
+  /* Header */
+  .menu-list {
+    display: flex;
+    gap: 40px;
+  }
 
+  .hamburger-btn {
+    display: none;
+  }
+
+  /* Hero */
   .overlay {
     max-width: 768px;
 
@@ -111,6 +132,22 @@
     margin: 0 auto;
   }
 
+  /* Header */
+  .contacts {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .contact-list {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 16px;
+  }
+
+  .header-container {
+    max-width: 768px;
+  }
+
   /* Advantages */
   .advant-list {
     display: flex;
@@ -157,6 +194,12 @@
     padding-right: 15px;
     padding-left: 15px;
   }
+
+  .contacts {
+    margin-left: auto;
+  }
+
+  /* Header */
 
   /* Hero */
   .hero {
