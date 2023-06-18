@@ -220,17 +220,54 @@
           <h2 class="section-title">What are we doing</h2>
           <ul class="list what-doing-list">
             <li class="what-doing-item">
-              <img src="./images/computer.jpg" alt="IMac" width="360" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-doing-section/computer.webp    1x,
+                    ./images/what-doing-section/computer@2x.webp 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  src="./images/what-doing-section/computer.jpg"
+                  alt="IMac"
+                  width="360"
+                />
+              </picture>
             </li>
+
             <li class="what-doing-item">
-              <img src="./images/phone.jpg" alt="Smartphone" width="360" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-doing-section/smartphones.webp    1x,
+                    ./images/what-doing-section/smartphones@2x.webp 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  src="./images/what-doing-section/phone.jpg"
+                  alt="Smartphone"
+                  width="360"
+                />
+              </picture>
             </li>
+
             <li class="what-doing-item">
-              <img
-                src="./images/phone-laptop.jpg"
-                alt="A smartphone in the hand and laptop in the background"
-                width="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-doing-section/smartphone-in-hand.webp    1x,
+                    ./images/what-doing-section/smartphone-in-hand@2x.webp 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  src="./images/what-doing-section/phone-laptop.jpg"
+                  alt="A smartphone in the hand and laptop in the background"
+                  width="360"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -241,12 +278,21 @@
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="list team-list tablet-container">
+            <!--  -->
             <li class="team-card">
-              <img
-                src="./images/person-one.jpg"
-                alt="fist person"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/pers-one.webp    1x,
+                    ./images/team/pers-one@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/person-one.jpg"
+                  alt="fist person"
+                  width="264"
+                />
+              </picture>
               <div class="team-member">
                 <h3 class="team-undertitle">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -282,12 +328,21 @@
                 </ul>
               </div>
             </li>
+            <!--  -->
             <li class="team-card">
-              <img
-                src="./images/person-two.jpg"
-                alt="second person"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/pers-two.webp    1x,
+                    ./images/team/pers-two@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/person-two.jpg"
+                  alt="second person"
+                  width="264"
+                />
+              </picture>
               <div class="team-member">
                 <h3 class="team-undertitle">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -323,12 +378,21 @@
                 </ul>
               </div>
             </li>
+            <!--  -->
             <li class="team-card">
-              <img
-                src="./images/person-three.jpg"
-                alt="third person"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/pers-three.webp    1x,
+                    ./images/team/pers-three@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/person-three.jpg"
+                  alt="third person"
+                  width="264"
+                />
+              </picture>
               <div class="team-member">
                 <h3 class="team-undertitle">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -364,12 +428,21 @@
                 </ul>
               </div>
             </li>
+            <!--  -->
             <li class="team-card">
-              <img
-                src="./images/person-vour.jpg"
-                alt="fourth person"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/pers-four.webp    1x,
+                    ./images/team/pers-four@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/person-four.jpg"
+                  alt="fourth person"
+                  width="264"
+                />
+              </picture>
               <div class="team-member">
                 <h3 class="team-undertitle">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
