@@ -151,6 +151,30 @@
   .subscribe-input {
     width: 264px;
   }
+
+  /* Portfolio Page */
+  .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .buttons-list {
+    margin-bottom: 64px;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .projects-list {
+    gap: 72px 24px;
+  }
+
+  .projects-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .portfolio-section > .container {
+    max-width: 768px;
+  }
 }
 
 /*! Tablet only!!! */
@@ -351,5 +375,27 @@
 
   .logo-container {
     margin-right: 40px;
+  }
+
+  /* Portfolio Page */
+  .portfolio-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .buttons-list {
+    margin-bottom: 72px;
+  }
+
+  .projects-list {
+    gap: 48px 24px;
+  }
+
+  .projects-item {
+    width: calc((100% - 24px * 2) / 3);
+  }
+
+  .portfolio-section > .container {
+    max-width: 1440px;
   }
 }

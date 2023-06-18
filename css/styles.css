@@ -704,15 +704,16 @@ Section Team*/
 }
 
 .portfolio-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .buttons-list {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 72px;
-  justify-content: center;
-  gap: 24px;
+
+  gap: 16px 24px;
 }
 
 /* Projects */
@@ -729,7 +730,12 @@ Section Team*/
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  gap: 48px;
+  justify-content: center;
+}
+
+.portfolio-section > .container {
+  max-width: 428px;
 }
 
 .projects-container {
@@ -738,7 +744,7 @@ Section Team*/
   border-top: none;
 }
 .projects-item {
-  width: calc((100% - 24px * 2) / 3);
+  max-width: 396px;
 }
 
 .project-link {
