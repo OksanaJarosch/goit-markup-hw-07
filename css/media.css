@@ -1,4 +1,9 @@
 /*! only phone */
+@media screen and (max-width: 427px) {
+  .tel-contact {
+    font-size: 26px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .contacts {
@@ -69,6 +74,10 @@
 /*! tablet */
 
 @media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
   /* Header */
   .menu-list {
     display: flex;
@@ -85,17 +94,31 @@
   }
 
   /* Hero */
+
   .overlay {
     max-width: 768px;
+    height: 436px;
 
-    /* background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg/tablet-hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-bg/tablet-hero-bg@2x.webp");
+    }
   }
 
   .hero-title {
@@ -219,16 +242,28 @@
     max-width: 1440px;
     height: 600px;
 
-    /* background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  */
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg/tablet-hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-bg/hero-bg@2x.webp");
+    }
+  }
+
   .hero-title {
     margin-bottom: 48px;
   }
