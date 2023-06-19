@@ -74,6 +74,12 @@
 /*! tablet */
 
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .mobile-menu {
     display: none;
   }
@@ -96,7 +102,7 @@
   /* Hero */
 
   .overlay {
-    max-width: 768px;
+    width: 100%;
     height: 436px;
 
     background-image: linear-gradient(
@@ -166,6 +172,7 @@
 
   .projects-list {
     gap: 72px 24px;
+    justify-content: start;
   }
 
   .projects-item {
@@ -179,7 +186,7 @@
 
 /*! Tablet only!!! */
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .tablet-container {
     display: flex;
     flex-wrap: wrap;
@@ -193,17 +200,25 @@
     display: flex;
     margin-left: auto;
   }
+  .contact {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+  /* SLATE */
 
   .contact-list {
     flex-direction: column;
     gap: 12px;
     padding-top: 16px;
+    padding-bottom: 16px;
   }
 
-  .header-container {
-    max-width: 768px;
+  .contact-item {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
   }
-
   /* Advantages */
   .advant-list {
     display: flex;
@@ -244,9 +259,9 @@
 }
 /*! desktop*/
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -263,7 +278,7 @@
   }
 
   .overlay {
-    max-width: 1440px;
+    width: 100%;
     height: 600px;
 
     background-image: linear-gradient(
@@ -396,6 +411,6 @@
   }
 
   .portfolio-section > .container {
-    max-width: 1440px;
+    max-width: 1158px;
   }
 }
