@@ -1,5 +1,21 @@
 /*! only phone */
-@media screen and (max-width: 427px) {
+
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  .project-title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .tel-contact {
+    font-size: 20px;
+  }
+
+  .mob-nav-item {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 331px) and (max-width: 427px) {
   .tel-contact {
     font-size: 26px;
   }
@@ -17,10 +33,6 @@
     padding-top: 24px;
     padding-bottom: 22px;
   }
-
-  /* .modal {
-    max-width: 392px;
-  } */
 
   .advant-item:not(:last-child) {
     margin-bottom: 72px;
@@ -181,6 +193,10 @@
 
   .portfolio-section > .container {
     max-width: 768px;
+  }
+
+  .project-title {
+    font-size: 20px;
   }
 }
 
